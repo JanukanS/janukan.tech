@@ -1,0 +1,49 @@
+<html>
+<head>
+{{ header }}
+        <style>
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto 95%;
+        gap: 1%;
+        grid-template-areas:
+            "header"
+            "banner"
+            "blog";
+    }
+    </style>
+</head>
+<body class="container">
+  <div style="grid-area: header">
+    {{ navbar }}
+  </div>
+  <div class="terminal-alert terminal-alert-error" style="grid-area: banner">
+
+  </div>
+  <section style="grid-area: blog">
+<div class="terminal-timeline">
+
+    <div class="terminal-card">
+      <header>Card Title</header>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas
+        ex vero enim in doloribus officiis ullam vel nam esse sapiente velit
+        incidunt. Eaque quod et, aut maiores excepturi sint.
+          <a>Read More</a>
+      </div>
+    </div>
+    <div class="terminal-card">
+      <header>Card Title</header>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas
+        ex vero enim in doloribus officiis ullam vel nam esse sapiente velit
+        incidunt. Eaque quod et, aut maiores excepturi sint.
+          <a>Read More</a>
+      </div>
+    </div>
+  </div>
+      </section>
+
+</body>
+</html>

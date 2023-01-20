@@ -1,0 +1,52 @@
+<html>
+<head>
+{{ header }}
+        <style>
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 95%;
+        gap: 1%;
+        grid-template-areas:
+            "header header"
+            "banner banner"
+            "left   right";
+    }
+    </style>
+</head>
+<body class="container">
+  <div style="grid-area: header">
+    {{ navbar }}
+  </div>
+  <div class="terminal-alert" style="grid-area: banner">
+
+  </div>
+  <div style="grid-area: right">
+      <div class="terminal-card">
+          <header>About me</header>
+          <div>
+          <ul>
+              <li>
+                  grad student who simulates laser-plasma interactions
+              </li>
+
+                  <li>
+                      writes about topics relevant to tech
+                  </li>
+<li>
+     I maintain a few of my own projects
+</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div style="grid-area: left">
+      <u>Recent Blog Post</u>
+      <br>
+      <u>Recent Microblog Posts</u>
+  </div>
+
+
+
+</body>
+</html>

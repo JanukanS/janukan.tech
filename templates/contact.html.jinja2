@@ -1,0 +1,64 @@
+<html>
+<head>
+{{ header }}
+        <style>
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 95%;
+        gap: 1%;
+        grid-template-areas:
+            "header header"
+            "banner banner"
+            "left   right";
+    }
+    </style>
+</head>
+<body class="container">
+  <div style="grid-area: header">
+    {{ navbar }}
+  </div>
+  <div class="terminal-alert" style="grid-area: banner">
+
+  </div>
+  <div style="grid-area: left">
+  <ul>
+      <li>
+          <a href="https://github.com/JanukanS">
+              Github
+          </a>
+      </li>
+      <li>
+          <a href="mailto:janukan@protonmail.com">
+              Email
+          </a>
+      </li>
+  </ul>
+  </div>
+  <div style="grid-area: right">
+      <form>
+      <fieldset>
+          <legend>
+              Send a Message
+          </legend>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="email">
+          </div>
+          <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" rows=10></textarea>
+          </div>
+          <div class="form-group">
+              <button class="btn btn-default btn-block" type="submit" name="submit" id="submit">Submit</button>
+          </div>
+      </fieldset>
+      </form>
+  </div>
+
+
+
+
+
+</body>
+</html>
